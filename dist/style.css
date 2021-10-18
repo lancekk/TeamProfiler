@@ -18,10 +18,12 @@ main {
   flex-wrap: wrap;
   width: 80%;
   justify-self: center;
-  justify-content: space-between;
+  justify-content: space-around;
+  padding:5px;
 }
 
 .card {
+  margin:5px;
   border: 1px solid black;
   width: 280px;
   height: 300px;
