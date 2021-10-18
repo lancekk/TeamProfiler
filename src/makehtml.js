@@ -57,8 +57,19 @@ const ask = async () => {
 
 }
 
+const htmlHead = () => {
+  return `
+  <head>
+    <link rel="stylesheet" href="./style.css">
+  </head>`;
+}
+
 const writeProfile = (fname, employees) => {
-  let data = "<html><body><header><h1>My Team</h1></header>\n";
+  let data = `<html>
+  ${htmlHead()}
+  <body>
+  <header><h1>My Team</h1></header>\n`;
+
   for (e of employees) {
     data += e.genHtml();
   }
