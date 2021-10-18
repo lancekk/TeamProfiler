@@ -1,0 +1,27 @@
+{
+  "name": "teamprofiler",
+  "version": "1.0.0",
+  "description": "Create a team profile on the command line",
+  "main": "index.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "dependencies": {
+    "inquirer": "^8.2.0",
+    "jest": "^27.3.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "npx jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/lancekk/TeamProfiler.git"
+  },
+  "author": "Lance Kelley",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/lancekk/TeamProfiler/issues"
+  },
+  "homepage": "https://github.com/lancekk/TeamProfiler#readme"
+}
