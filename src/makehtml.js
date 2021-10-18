@@ -70,11 +70,13 @@ const writeProfile = (fname, employees) => {
   <body>
   <header><h1>My Team</h1></header>\n`;
 
+  data += `<main>\n`;
   data += `<div class="cards">\n`;
   for (e of employees) {
     data += e.genHtml();
   }
   data += `\n</div>`;
+  data += `</main>\n`;
   data += "</body></html>";
 
   fs.writeFileSync(fname, data);
