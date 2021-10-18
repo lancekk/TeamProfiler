@@ -11,7 +11,7 @@ const ask = async () => {
   const repeat_q = {
     name: "repeat",
     type: "list",
-    prompt: "Add an employee or quit",
+    message: "Add an employee or quit",
     choices: [
       {
         name: "Add Engineer",
@@ -70,9 +70,11 @@ const writeProfile = (fname, employees) => {
   <body>
   <header><h1>My Team</h1></header>\n`;
 
+  data += `<div class="cards">\n`;
   for (e of employees) {
     data += e.genHtml();
   }
+  data += `\n</div>`;
   data += "</body></html>";
 
   fs.writeFileSync(fname, data);
