@@ -46,7 +46,7 @@ main {
 }
 
 .row {
-  height: 1.5em;
-  padding: 2px;
+  box-sizing: border-box;
+  padding: .5em .25em;
   border: 1px solid black;
 }
