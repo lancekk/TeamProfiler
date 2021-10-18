@@ -7,8 +7,9 @@ const inq = require('inquirer');
 
 const fs = require('fs');
 
-const { writeProfile } = require('./src/makehtml');
+const { ask, writeProfile } = require('./src/makehtml');
 
 console.log('hahaha');
 
+ask().then((employees) => writeProfile('./dist/profile.html', employees));
 
