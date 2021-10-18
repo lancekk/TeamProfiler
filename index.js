@@ -9,7 +9,5 @@ const fs = require('fs');
 
 const { ask, writeProfile } = require('./src/makehtml');
 
-console.log('hahaha');
-
 ask().then((employees) => writeProfile('./dist/profile.html', employees));
 
